@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GadgetHub - Tech Products</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2980b9;
+      font-weight: 600;
+    }
+
+    header img, header .icon {
+      font-size: 3rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    thead {
+      background-color: #34495e;
+      color: white;
+    }
+
+    th {
+      padding: 18px 15px;
+      text-align: left;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #ecf0f1;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f8ff;
+      transform: scale(1.005);
+    }
+
+    td {
+      padding: 16px 15px;
+    }
+
+    .product-name {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .category {
+      background-color: #e0f7fa;
+      color: #006064;
+      padding: 6px 10px;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .description ul {
+      list-style-type: none;
+      padding-left: 10px;
+      margin-top: 5px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .description ul li {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 4px;
+    }
+
+    .description ul li::before {
+      content: "•";
+      color: #3498db;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      th, td {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header with Logo/Icon -->
+    <header>
+      <!-- Using emoji as icon (you can replace with SVG image) -->
+      <div class="icon">💻</div>
+      <h1>GadgetHub</h1>
+    </header>
+
+    <!-- E-commerce Product Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Firm Name</th>
+          <th>Icon</th>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GadgetHub</td>
+          <td>💻</td>
+          <td class="product-name">UltraBook Pro X1</td>
+          <td><span class="category">Laptops</span></td>
+          <td class="description">
+            <ul>
+              <li>Intel Core i7, 16GB RAM, 512GB SSD</li>
+              <li>13.3" OLED Touch Display</li>
+              <li>Lightweight aluminum body</li>
+              <li>Backlit keyboard & fingerprint sensor</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>GadgetHub</td>
+          <td>🖱️</td>
+          <td class="product-name">SwiftClick Wireless Mouse</td>
+          <td><span class="category">Peripherals</span></td>
+          <td class="description">
+            <ul>
+              <li>Bluetooth 5.2 connectivity</li>
+              <li>Ergonomic design for comfort</li>
+              <li>Up to 18 months battery life</li>
+              <li>Programmable buttons</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>GadgetHub</td>
+          <td>⌨️</td>
+          <td class="product-name">MechaniKey RGB Keyboard</td>
+          <td><span class="category">Peripherals</span></td>
+          <td class="description">
+            <ul>
+              <li>Mechanical blue switches</li>
+              <li>Full RGB backlighting</li>
+              <li>Anti-ghosting, N-key rollover</li>
+              <li>Durable aircraft-grade aluminum frame</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>GadgetHub</td>
+          <td>🖥️</td>
+          <td class="product-name">VisionMaster 27" Monitor</td>
+          <td><span class="category">Displays</span></td>
+          <td class="description">
+            <ul>
+              <li>4K UHD resolution (3840x2160)</li>
+              <li>IPS panel with wide viewing angles</li>
+              <li>75Hz refresh rate, HDR support</li>
+              <li>Thin bezels, VESA mount compatible</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>🔌</td>
+          <td class="product-name">PowerSurge 65W GaN Charger</td>
+          <td><span class="category">Accessories</span></td>
+          <td class="description">
+            <ul>
+              <li>GaN technology for compact size</li>
+              <li>USB-C PD fast charging</li>
+              <li>Charges laptop, phone, tablet simultaneously</li>
+              <li>Cooler and more efficient than traditional chargers</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>🎧</td>
+          <td class="product-name">SoundPulse Pro Headphones</td>
+          <td><span class="category">Audio</span></td>
+          <td class="description">
+            <ul>
+              <li>Active Noise Cancellation (ANC)</li>
+              <li>30-hour battery life</li>
+              <li>Premium sound with deep bass</li>
+              <li>Foldable design with carrying case</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>📱</td>
+          <td class="product-name">Phantom X Smartphone</td>
+          <td><span class="category">Mobile</span></td>
+          <td class="description">
+            <ul>
+              <li>6.8" AMOLED 120Hz display</li>
+              <li>Quad-camera system with 108MP main</li>
+              <li>5000mAh battery with 65W fast charge</li>
+              <li>Water-resistant design (IP68)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>💾</td>
+          <td class="product-name">FlashDrive Ultra 1TB</td>
+          <td><span class="category">Storage</span></td>
+          <td class="description">
+            <ul>
+              <li>USB 3.2 Gen 2 (up to 400MB/s read)</li>
+              <li>Durable metal casing</li>
+              <li>Password protection & encryption</li>
+              <li>Compact and pocket-friendly</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>🎮</td>
+          <td class="product-name">GameStorm Gaming Laptop</td>
+          <td><span class="category">Laptops</span></td>
+          <td class="description">
+            <ul>
+              <li>NVIDIA RTX 4070, Intel i9 processor</li>
+              <li>17.3" FHD 144Hz display</li>
+              <li>RGB backlit mechanical keyboard</li>
+              <li>Advanced cooling system</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>🖨️</td>
+          <td class="product-name">PrintMaster All-in-One Printer</td>
+          <td><span class="category">Peripherals</span></td>
+          <td class="description">
+            <ul>
+              <li>Print, scan, copy, fax in one device</li>
+              <li>Wireless printing from phone or tablet</li>
+              <li>Auto document feeder</li>
+              <li>Eco-friendly ink-saving mode</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>📡</td>
+          <td class="product-name">NetBlaze Wi-Fi 6 Router</td>
+          <td><span class="category">Networking</span></td>
+          <td class="description">
+            <ul>
+              <li>Wi-Fi 6 (802.11ax) up to 5.4Gbps</li>
+              <li>Covers up to 3000 sq ft</li>
+              <li>Supports 50+ devices simultaneously</li>
+              <li>Parental controls & guest network</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>📷</td>
+          <td class="product-name">SnapShot Pro Camera</td>
+          <td><span class="category">Imaging</span></td>
+          <td class="description">
+            <ul>
+              <li>24MP APS-C sensor</li>
+              <li>4K video recording at 60fps</li>
+              <li>Flip-out touchscreen LCD</li>
+              <li>Weather-sealed body</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>⌚</td>
+          <td class="product-name">SmartBeat Fitness Watch</td>
+          <td><span class="category">Wearables</span></td>
+          <td class="description">
+            <ul>
+              <li>Heart rate, SpO2, sleep monitoring</li>
+              <li>GPS tracking and 50+ workout modes</li>
+              <li>7-day battery life</li>
+              <li>Water-resistant up to 50m</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>💽</td>
+          <td class="product-name">DataVault External SSD 2TB</td>
+          <td><span class="category">Storage</span></td>
+          <td class="description">
+            <ul>
+              <li>USB-C, up to 1050MB/s transfer speed</li>
+              <li>Shock and dust resistant</li>
+              <li>Compact size with rugged design</li>
+              <li>Plug-and-play, no driver needed</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>🎥</td>
+          <td class="product-name">StreamMaster 4K Webcam</td>
+          <td><span class="category">Peripherals</span></td>
+          <td class="description">
+            <ul>
+              <li>4K Ultra HD resolution</li>
+              <li>Auto-focus and low-light correction</li>
+              <li>Integrated dual microphones</li>
+              <li>Compatible with Zoom, Teams, OBS</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+</html>
